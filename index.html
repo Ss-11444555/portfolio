@@ -689,6 +689,35 @@
             gap: 30px;
         }
 
+        /* persona card styling */
+.persona-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+}
+
+.persona-card h3 {
+  margin-bottom: 15px;
+  color: var(--electric-blue);
+  display: flex; align-items: center; gap: 8px;
+}
+
+.persona-list {
+  list-style: none; padding: 0; margin: 0;
+}
+
+.persona-list li {
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.persona-list i {
+  color: var(--electric-blue);
+}
+
+
         .project-description {
             margin-bottom: 20px;
         }
@@ -709,6 +738,10 @@
         .project-features li {
             margin-bottom: 8px;
         }
+        .logo img {
+  vertical-align: middle;
+}
+
 
         .project-image {
             height: 300px;
@@ -801,7 +834,12 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo"></div>
+           <div class="logo">
+  <a href="index.html">
+    <img src="logo.jpg" alt="Logo" style="height: 40px; width: auto;">
+  </a>
+</div>
+
                 <div class="nav-links">
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
@@ -828,31 +866,42 @@
             <div class="section-title">
                 <h2>About Me</h2>
             </div>
-            <div class="about-container">
-                <div class="about-img">
-    <img src="me.jpg" alt="Mohammad Nassar" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
-</div>
-                <div class="about-content">
-                    <h3>AI-Focused Computer Science Student</h3>
-                    <ul style="margin-bottom: 20px; line-height: 1.8;">
-    <li><strong>Full Name:</strong> Mohammad Nassar Al Smadi</li>
-    <li><strong>Age:</strong> 19 years old</li>
-    <li><strong>Nationality:</strong> Syrian</li>
-    <li><strong>Languages:</strong> Arabic (native), English (fluent)</li>
-    <li><strong>Strengths:</strong> Critical thinker, creative problem solver, strong in teamwork</li>
-    <li><strong>Hobbies:</strong> Coding, football, reading about AI</li>
-    <li><strong>Career Goal:</strong> Become a leading AI Engineer focused on impactful solutions</li>
-</ul>
-                    <p>I'm a final-year Computer Science student specializing in Artificial Intelligence at Universiti Teknikal Malaysia Melaka (UTeM).</p>
-                    <p>My passion lies in building AI-driven, human-centered systems that solve real-world problems. I specialize in Python, C++, SQL, Fuzzy Logic, and chatbot development.</p>
-                    <p>This portfolio showcases my journey through AI development, featuring my AI-powered chatbot CareerBot, projects in machine learning and fuzzy logic, and my final-year research on EV charging optimization using genetic algorithms.</p>
-                    
-                    <div class="university-badge">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Universiti Teknikal Malaysia Melaka (UTeM)</span>
-                    </div>
-                </div>
+           <div class="about-container">
+  <!-- LEFT : Photo -->
+  <div class="about-img">
+    <img src="me.jpg" alt="Mohammad Nassar Al Smadi"
+         style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+  </div>
+
+  <!-- RIGHT : Persona + Bio -->
+  <div class="about-content">
+
+    <!-- persona card -->
+    <div class="persona-card">
+      <h3><i class="fas fa-user-astronaut"></i> AI-Focused Computer Science Student</h3>
+      <ul class="persona-list">
+        <li><i class="fas fa-id-badge"></i> <strong>Full Name:</strong> Mohammad Nassar Al Smadi</li>
+        <li><i class="fas fa-birthday-cake"></i> <strong>Age:</strong> 19 years</li>
+        <li><i class="fas fa-flag"></i> <strong>Nationality:</strong> Syrian</li>
+        <li><i class="fas fa-language"></i> <strong>Languages:</strong> Arabic (native), English (fluent)</li>
+        <li><i class="fas fa-lightbulb"></i> <strong>Strengths:</strong> Critical thinker, creative, team-oriented</li>
+        <li><i class="fas fa-futbol"></i> <strong>Hobbies:</strong> Coding, football, reading AI news</li>
+        <li><i class="fas fa-bullseye"></i> <strong>Career Goal:</strong> Lead AI engineer creating impactful solutions</li>
+      </ul>
+    </div>
+
+    <!-- descriptive paragraphs (unchanged) -->
+    <p>I'm a final-year Computer Science student … (keep the rest of your paragraphs here).</p>
+    <p>My passion lies in building AI-driven, human-centred systems …</p>
+    <p>This portfolio showcases my journey through AI development …</p>
+
+    <div class="university-badge">
+      <i class="fas fa-graduation-cap"></i>
+      Universiti Teknikal Malaysia Melaka (UTeM)
             </div>
+            </div>
+            </div>
+
         </div>
     </section>
 
